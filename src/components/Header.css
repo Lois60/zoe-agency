@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  
+  gap: 10px;
+  background-color: #faf9f6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav-logo img {
+  height: 80px;
+  margin-left: 20px;
+}
+
+.hamburger-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+}
+
+.nav-items li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.nav-items li a:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    background-color: #faf9f6;
+    position: absolute;
+
+    top: 50px;
+    right: 10px;
+    width: 200px;
+  }
+
+  .nav-items.visible {
+    display: flex;
+  }
+
+  .nav-items li {
+    border-bottom: 1px solid #444;
+    color: #faf9f6;
+  }
+}
