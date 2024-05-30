@@ -2,7 +2,7 @@ import "./About.css";
 
 export const About = ()=>{
     return (
-      <section className="about-container">
+      <section id="about">
         <div className="about-img">
           <img  className="abt-img"  src="./AboutPic.jpeg" alt="" srcset="" />
         </div>

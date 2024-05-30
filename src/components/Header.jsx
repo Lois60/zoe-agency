@@ -11,7 +11,9 @@ export const Header = () => {
     <header>
       <div className="nav-menu">
         <div className="nav-logo">
-          <img src="./ZoeLogo.png" alt="" srcset="" />
+          <a href="/">
+            <img src="./ZoeLogo.png" alt="Zoe Logo" />
+          </a>
         </div>
         <button className="hamburger-button" onClick={toggleNavVisibility}>
           ☰
@@ -21,11 +23,12 @@ export const Header = () => {
             <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#features">Features</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#join">Join</a>
+            <a href="#services">Services</a>
           </li>
+
           <li>
             <a href="#contact">Contact</a>
           </li>

@@ -43,6 +43,7 @@
 
 .nav-items li a:hover {
   background-color: #555;
+  color: white;
 }
 
 @media (max-width: 768px) {
